@@ -6,10 +6,9 @@ import { ROUTER_PATH } from './constants/router/constantsRoutes';
 
 class App extends React.Component {
 	render() {
-		const { competitions } = this.state;
 		return (
 			<Switch>
-				<Route exact path={ROUTER_PATH} render={() => <ChartComponent competitions={competitions} />} />
+				<Route exact path={ROUTER_PATH} render={() => <ChartComponent/>} />
 			</Switch>
 		);
 	}
